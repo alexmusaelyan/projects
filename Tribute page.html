@@ -1,178 +1,202 @@
-<style>
-@media screen and (max-width: 600px){
-  header{
-    background-color: blue;
-  }
-}
-
-#header-img {
-  max-width: 100px
-}
-#nav-bar {
-  background-color: black;
-  position: fixed;
-  top: 0;
-}
-#main-doc {
-  background-color: #CDCDCD;
-  font-family: 'Roboto', sans-serif;
-}
-#title {
-  font-size: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5em;
-}
-#description {
-    text-align: center;
-    display: flex;
-}
-#img-div {
-    background-color: white;
-}
-#image {
-  display: block;
-  max-width: 550px;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#survey-form{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 15em;
-}
-</style>
-
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<header id="header">
-  <div>
-    <img src="https://i.pinimg.com/564x/9b/b4/f0/9bb4f079fddee2a51ee6e303ee5e7f8c.jpg" alt="Ninja" id="header-img">
-  </div>
-  <nav id="nav-bar">
-    <a class="nav-link" href="#Features">Features</a>
-    <a class="nav-link" href="#Survey">Survey</a>
-    <a class="nav-link" href="#Pricing">Pricing</a>
-  </nav>
-</header>
-<main id="main-doc">
-    <h1 id="title">User story</h1>
-    <p id="description">User stories are written by or for users or customers to influence the functionality of the system being developed.</p>
-  <form id="form" action="/https://www.freecodecamp.com/email-submit">
-    <input id="email" type="email" name="email" placeholder="Enter your email adress">
-    <input id="submit" type="Submit" value="Get started">
-  </form>
-    <div id="img-div"><img id="image" src="https://miro.medium.com/max/1838/1*-bwYrRg6vpox7nBemwvllw.png" alt="Image on my page">
-      <p id="img-caption">The Structure of a User Story in details</p>
-    </div>
-  <div id=Features></div>
-  <div id="tribute-info">In software development and product management, a user story is an informal, natural language description of features of a software system. They are written from the perspective of an end user or user of a system, and may be recorded on index cards, Post-it notes, or digitally in project management software. Depending on the project, user stories may be written by different stakeholders like client, user, manager, or development team.
-
-User stories are a type of boundary object. They facilitate sensemaking and communication; and may help software teams document their understanding of the system and its context.</div>
-  <a id="tribute-link" href="https://en.wikipedia.org/wiki/User_story" target="_blank">Aditional info</a>
-  <section class="main-section">
-    <header>Usage</header>
-  </section>
-    <section class="main-section">
-      <header>As a central part of many agile development methodologies, such as in XP's planning game, user stories describe what may be built in the software project. User stories are prioritized by the customer (or the product owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</header>
-    </section>
-  <section class="main-section">
-    <header>When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or the requirements may have changed since the story was written.</header>
-  </section>
-  <section class="main-section">
-    <header>User stories can be expanded to add detail based on these conversations. This can include notes, attachments and acceptance criteria.</header>
-  </section>
-  <section class="main-section">
-    <header>Mike Cohn defines acceptance criteria as "notes about what the story must do in order for the product owner to accept it as complete."[19] They define the boundaries of a user story and are used to confirm when a story is completed and working as intended.</header>
-  </section>
-  <section class="main-section">
-    <header>The appropriate amount of information to be included in the acceptance criteria varies by team, program and project. Some may include 'predecessor criteria', "The user has already logged in and has already edited his information once".[This quote needs a citation] Some may write the acceptance criteria in typical agile format, Given-When-Then. Others may simply use bullet points taken from original requirements gathered from customers or stakeholders.</header>
-  </section>
-  <section class="main-section">
-    <header>In order for a story to be considered done or complete, all acceptance criteria must be met.</header>
-  </section>
-  <div>
-    <iframe id="video" width="620" height="315" src="https://www.youtube.com/watch?v=-LL6NPUevGk&ab_channel=AWEme">
-  </iframe>
-  </div>
-  <div id="Survey"></div>
-  <form id="survey-form">
-    <p>Survey Form</p>
-    <label id="name-label">Your name</label>
-    <p><input id="name" name="name" required placeholder="Enter your name"></p>
-    <label id="email-label">Your email</label>
-<p><input id="email" type="email" name="email" required placeholder="Enter your email"></p>
-    <label id="number-label">Your number</label>
-    <p><input id="number" type="number" min="10" max="14" placeholder="Enter your number"></p>
-    <label for="option">Which option best describes your current role</label>
-    <select id="dropdown">
-      <option value="Student">Student</option>
-      <option value="Full-time job">Full-time job</option>
-      <option value="Prefer not to say">Prefer not to say</option>
-      <option value="Other">Other</option>
-    </select>
-      <p>Would you recommend freeCodeCamp to a friend?</p>
+<!DOCTYPE html>
+<html>
+  <style>
+    @media screen and (max-width: 600px){
+      body{
+        font-size: 2em;
+      }
+    }
+    body{
+      background-color: #363636;
+      font-family: 'Roboto', sans-serif;
+      color: whitesmoke;
+    }
+    header {
+      background-color: #363636;
+    }
+    #header-img {
+      max-width: 100px
+    }
+    #nav-bar {
+      background-color: black;
+      position: fixed;
+      top: 0;
+    }
+    #main-doc {
+      
+    }
+    #title {
+      font-size: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 5em;
+    }
+    #description {
+      text-align: center;
+      display: flex;
+    }
+    #video-div {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right,#363636,black,#363636);
+    }
+    #image {
+      display: block;
+      max-width: 550px;
+      border-radius: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #survey-form{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 15em;
+    }
+    </style>
+  <header id="header">
     <div>
-        <input type="radio" name="recommend" value="Definetely">
-        <label for="Definetely"> Definetely</label>
-      </div>
+      <img src="https://i.pinimg.com/564x/9b/b4/f0/9bb4f079fddee2a51ee6e303ee5e7f8c.jpg" alt="Ninja" id="header-img">
+    </div>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#email">Get started</a>
+      <a class="nav-link" href="#Features">Features</a>
+      <a class="nav-link" href="#Survey">Survey</a>
+      <a class="nav-link" href="#Pricing">Pricing</a>
+    </nav>
+    <h1 id="title">How to become a Ninja</h1>
+      <p id="description">Ninjas are not simply black-clad figures darting around at breakneck speed – they are experts in the Japanese art of warfare: ninjutsu</p>
+    <form id="form" action="/https://www.freecodecamp.com/email-submit">
+  </header>
+  <body>
+    <main id="main-doc">
+      <input id="email" type="email" name="email" placeholder="Enter your email adress">
+      <input id="submit" type="Submit" value="Get started">
+    </form>
+    <div id="video-div">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-LL6NPUevGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p id="video-caption">Who doesn't want to be a master of stealth and martial arts? This video teaches you everything you need to know to be a ninja warrior!</p>
+    <div id=Features>
+      <h3>1. Use information wisely</h3>
+      <p>Ninjas should be able to obtain information quickly, analyse it and turn it into knowledge – in short, a ninja should be an information specialist.</p>
+    </div>
+    <div id="tribute-info">
+      <h3>2. Train both body and soul</h3>
+      <p>Ninjas need strong bodies and strong souls. They must be able to run at least marathon distance and should master some martial arts. Ninjas should also keep calm and be in control of their minds at all times. Before their work, ninjas perform Kuji Kiri – the ‘grid of nine syllable slashes’ hand-gesture ritual.</p>
+    </div>
+    <div id="tribute-info">
+      <h3>3. Learn the knowledge in nature</h3>
+      <p>Ninjas should observe everything and learn from nature. In order to survive and fulfil their mission, ninjas should make the most use of this information. For instance, ninjas can make poisons from plants, insects and animals.</p>
+    </div>
+    <div id="tribute-info">
+      <h3>4. Learn a variety of skills</h3>
+      <p>Ninjas should have a wide range of skills to help them succeed in their mission. For example, learn languages, play music, read books – with diverse knowledge comes greater power.</p>
+    </div>
+    <div id="tribute-info">
+      <h3>5. Communicate well</h3>
+      <p>Ninjas should be good at communication with other people. Ninjas should be kind to everyone, and should not make enemies. Most of all, ninjas should not look strong – they should appear to be like ordinary people.</p>
+    </div>
+    <a id="tribute-link" href="https://www.wanderlust.co.uk/content/how-to-be-a-ninja-japan-guide/" target="_blank">Aditional info</a>
+    <section class="main-section">
+      <header>Usage</header>
+    </section>
+      <section class="main-section">
+        <header>As a central part of many agile development methodologies, such as in XP's planning game, user stories describe what may be built in the software project. User stories are prioritized by the customer (or the product owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</header>
+      </section>
+    <section class="main-section">
+      <header>When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or the requirements may have changed since the story was written.</header>
+    </section>
+    <section class="main-section">
+      <header>User stories can be expanded to add detail based on these conversations. This can include notes, attachments and acceptance criteria.</header>
+    </section>
+    <section class="main-section">
+      <header>Mike Cohn defines acceptance criteria as "notes about what the story must do in order for the product owner to accept it as complete."[19] They define the boundaries of a user story and are used to confirm when a story is completed and working as intended.</header>
+    </section>
+    <section class="main-section">
+      <header>The appropriate amount of information to be included in the acceptance criteria varies by team, program and project. Some may include 'predecessor criteria', "The user has already logged in and has already edited his information once".[This quote needs a citation] Some may write the acceptance criteria in typical agile format, Given-When-Then. Others may simply use bullet points taken from original requirements gathered from customers or stakeholders.</header>
+    </section>
+    <section class="main-section">
+      <header>In order for a story to be considered done or complete, all acceptance criteria must be met.</header>
+    </section>
+    <div id="Survey"></div>
+    <form id="survey-form">
+      <p>Survey Form</p>
+      <label id="name-label">Your name</label>
+      <p><input id="name" name="name" required placeholder="Enter your name"></p>
+      <label id="email-label">Your email</label>
+      <p><input id="email" type="email" name="email" required placeholder="Enter your email"></p>
+      <label id="number-label">Your number</label>
+      <p><input id="number" type="number" min="10" max="14" placeholder="Enter your number"></p>
+      <label for="option">Which option best describes your current role</label>
+      <select id="dropdown">
+        <option value="Student">Student</option>
+        <option value="Full-time job">Full-time job</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+        <p>What level ninja are you?</p>
       <div>
-        <input type="radio" name="recommend" value="Maybe">
-        <label for="Maybe"> Maybe</label>
-      </div>
-      <div>
-        <input type="radio" name="recommend" value="Not sure">
-        <label for="Not sure"> Not sure</label>
-      </div>
-    <p>What would you like to see improved? (Check all that apply</p>
-      <div>
-        <input type="checkbox" name="box" value="Front-end Projects">
-        <label for="box">Front-end Projects</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Back-end Projects">
-        <label for="box">Back-end Projects</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Data Visualization">
-        <label for="box">Data Visualization</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Challenges">
-        <label for="box">Challenges</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Open Source Community">
-        <label for="box">Open Source Community</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Gitter help rooms">
-        <label for="box">Gitter help rooms</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Videos">
-        <label for="box">Videos</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="City Meetups">
-        <label for="box">City Meetups</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Wiki">
-        <label for="box">Wiki</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Forum">
-        <label for="box">Forum</label>
-      </div>
-      <div>
-        <input type="checkbox" name="box" value="Additional Courses">
-        <label for="box">Additional Courses</label>
-      </div>
-    <p><label for="comment">Any comments or suggestions?</label>
-        <textarea name="comment" rows="5" cols="33">Enter your comment here...</textarea></p>
-    <p><input id="submit" type="submit" value="Submit"></p>
-  </form>
-  <div id="Pricing"></div>
-</main>
+          <input type="radio" name="recommend" value="Newbie Kitten">
+          <label for="Newbie Kitten"> Newbie Kitten</label>
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="Developing Student">
+          <label for="Developing Student"> Developing Student</label>
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="Master">
+          <label for="Master"> Master</label>
+        </div>
+      <p>Which Ninja warrior skills would you like to improve?</p>
+        <div>
+          <input type="checkbox" name="box" value="Spiritual refinement">
+          <label for="box">Spiritual refinement</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Unarmed combat">
+          <label for="box">Unarmed combat</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Sword techniques">
+          <label for="box">Sword techniques</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Staff fighting">
+          <label for="box">Staff fighting</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Throwing blades">
+          <label for="box">Throwing blades</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Spear fighting">
+          <label for="box">Spear fighting</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Chain and sickle weapon">
+          <label for="box">Chain and sickle weapon</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Fire and explosives">
+          <label for="box">Fire and explosives</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Disguise and impersonation">
+          <label for="box">Disguise and impersonation</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Stealth and entering methods">
+          <label for="box">Stealth and entering methods</label>
+        </div>
+        <div>
+          <input type="checkbox" name="box" value="Horsemanship">
+          <label for="box">Horsemanship</label>
+        </div>
+      <p><label for="comment">Any comments or suggestions?</label>
+          <textarea name="comment" rows="5" cols="33">Enter your comment here...</textarea></p>
+      <p><input id="submit" type="submit" value="Submit"></p>
+    </form>
+    <div id="Pricing"></div>
+  </main>
+  </body>
+</html>
