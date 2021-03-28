@@ -7,45 +7,58 @@
       }
     }
     body{
+      margin-top: 100px;
       background-color: #363636;
       font-family: 'Roboto', sans-serif;
       color: whitesmoke;
+    }
+    h1{
+      font-size: 60px;
+      text-align: center;
+      text-shadow: 0px 5px 30px #00FA9A;
+
     }
     header {
       background-color: #363636;
     }
     #header-img {
-      max-width: 100px
+      max-width: 60px;
+      display: block;
     }
     #nav-bar {
-      background-color: black;
+      background: linear-gradient(to right,#363636,black,#363636);
+      width: 100%;
       position: fixed;
       top: 0;
     }
-    #main-doc {
-      
+    ul{
+      text-align: center;
+      margin: 0;
+      padding-left: 0;
     }
-    #title {
-      font-size: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 5em;
+    li{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .nav-link{
+      font-family: 'Ubuntu Condensed', sans-serif;
+      letter-spacing: 3px;
+      position: relative;
+      padding-bottom: 0px;
+      margin: 0 34px 0 30px;
+      font-size: 17px;
+      text-decoration: none;
+      color: #00FA9A;
+      text-transform: uppercase;
     }
     #description {
       text-align: center;
-      display: flex;
     }
     #video-div {
+      margin: 1em;
       display: flex;
       justify-content: center;
-      background: linear-gradient(to right,#363636,black,#363636);
-    }
-    #image {
-      display: block;
-      max-width: 550px;
-      border-radius: 20px;
-      margin-left: auto;
-      margin-right: auto;
+      background: #363636;
     }
     #survey-form{
       margin-left: auto;
@@ -54,17 +67,17 @@
     }
     </style>
   <header id="header">
-    <div>
-      <img src="https://i.pinimg.com/564x/9b/b4/f0/9bb4f079fddee2a51ee6e303ee5e7f8c.jpg" alt="Ninja" id="header-img">
-    </div>
     <nav id="nav-bar">
-      <a class="nav-link" href="#email">Get started</a>
-      <a class="nav-link" href="#Features">Features</a>
-      <a class="nav-link" href="#Survey">Survey</a>
-      <a class="nav-link" href="#Pricing">Pricing</a>
+      <ul>
+        <li><img id="header-img" src="https://png2.cleanpng.com/sh/f2a299f519044c5d4f8a082e41e0a10b/L0KzQYm3V8A3N6p5gZH0aYP2gLBuTf5qdptmRd54Z3Awc73wkL1ieqUyhtt3anGwebT2jr02amRrfaYBN0W7RLK3WL46PmQ1T6Y9MEG4Q4GCUcM5QWY4TqMBLoDxd1==/kisspng-ninja-logo-clip-art-ninja-icon-5b3fe467584a08.9630744015309138953616.png" alt="Ninja"></li>
+        <li><a class="nav-link" href="#email">Get started</a></li>
+        <li><a class="nav-link" href="#Features">Features</a></li>
+        <li><a class="nav-link" href="#Survey">Survey</a></li>
+        <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+      </ul>
     </nav>
     <h1 id="title">How to become a Ninja</h1>
-      <p id="description">Ninjas are not simply black-clad figures darting around at breakneck speed – they are experts in the Japanese art of warfare: ninjutsu</p>
+    <p id="description">Ninjas are not simply black-clad figures darting around at breakneck speed – they are experts in the Japanese art of warfare: ninjutsu</p>
     <form id="form" action="/https://www.freecodecamp.com/email-submit">
   </header>
   <body>
@@ -73,10 +86,12 @@
       <input id="submit" type="Submit" value="Get started">
     </form>
     <div id="video-div">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-LL6NPUevGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-LL6NPUevGk" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <p id="video-caption">Who doesn't want to be a master of stealth and martial arts? This video teaches you everything you need to know to be a ninja warrior!</p>
+    <br>
     <div id=Features>
+      <p><h2>5 quick steps to get better</h3></p>
       <h3>1. Use information wisely</h3>
       <p>Ninjas should be able to obtain information quickly, analyse it and turn it into knowledge – in short, a ninja should be an information specialist.</p>
     </div>
@@ -100,23 +115,14 @@
     <section class="main-section">
       <header>Usage</header>
     </section>
-      <section class="main-section">
-        <header>As a central part of many agile development methodologies, such as in XP's planning game, user stories describe what may be built in the software project. User stories are prioritized by the customer (or the product owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</header>
-      </section>
+    <section class="main-section">
+      <header>As a central part of many agile development methodologies, such as in XP's planning game, user stories describe what may be built in the software project. User stories are prioritized by the customer (or the product owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</header>
+    </section>
     <section class="main-section">
       <header>When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or the requirements may have changed since the story was written.</header>
     </section>
     <section class="main-section">
       <header>User stories can be expanded to add detail based on these conversations. This can include notes, attachments and acceptance criteria.</header>
-    </section>
-    <section class="main-section">
-      <header>Mike Cohn defines acceptance criteria as "notes about what the story must do in order for the product owner to accept it as complete."[19] They define the boundaries of a user story and are used to confirm when a story is completed and working as intended.</header>
-    </section>
-    <section class="main-section">
-      <header>The appropriate amount of information to be included in the acceptance criteria varies by team, program and project. Some may include 'predecessor criteria', "The user has already logged in and has already edited his information once".[This quote needs a citation] Some may write the acceptance criteria in typical agile format, Given-When-Then. Others may simply use bullet points taken from original requirements gathered from customers or stakeholders.</header>
-    </section>
-    <section class="main-section">
-      <header>In order for a story to be considered done or complete, all acceptance criteria must be met.</header>
     </section>
     <div id="Survey"></div>
     <form id="survey-form">
